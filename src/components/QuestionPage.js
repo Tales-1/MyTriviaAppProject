@@ -1,5 +1,5 @@
 
-import React, { useCallback } from 'react'
+import React from 'react'
 import Answers from './Answers'
 import Question from './Questions'
 
@@ -12,7 +12,7 @@ export default function QuestionPage(props){
     const [showResult,setShowResult] = React.useState(false)
 
     const [colorAnswers,setColorAnswers] = React.useState(false)
-    console.log(props.qs)
+
     const [storeAnswers, setStoreAnswers] = React.useState([
         {answer:false,selected:false,correct:false},
         {answer:false,selected:false,correct:false},
@@ -20,19 +20,6 @@ export default function QuestionPage(props){
         {answer:false,selected:false,correct:false},
         {answer:false,selected:false,correct:false},
     ])
-
-
-    function selectAnswer(e,index){
-        if(!e.target.closest("button")) return;
-        let ans = e.target.innerHTML
-        return setStoreAnswers((prev) => {
-            let arr = [...prev]
-            arr[index].answer = ans
-            arr[index].selected = true 
-            return arr
-            }
-        )
-    }
 
 
     // map over the data retrieved from API and plug in values into the JSX
@@ -54,6 +41,18 @@ export default function QuestionPage(props){
             </div>
         )
     })
+
+    function selectAnswer(e,index){
+        if(!e.target.closest("button")) return;
+        let ans = e.target.innerHTML
+        return setStoreAnswers((prev) => {
+            let arr = [...prev]
+            arr[index].answer = ans
+            arr[index].selected = true 
+            return arr
+            }
+        )
+    }
 
      function checkAnswers(){
          for(let i=0;i < storeAnswers.length; i++){

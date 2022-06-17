@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Button({option,sel,val,check,correct}){
+export default function Button({option,selectedAns,colorAns,check,correct}){
    
 
     const [highlight,setHighlight] = React.useState("")
@@ -8,19 +8,20 @@ export default function Button({option,sel,val,check,correct}){
 
     React.useLayoutEffect(()=>{
         setHighlight(()=>{
-            if(!val){
-                if(sel===option){
+            if(!colorAns){
+                if(selectedAns===option){
                     return "#D6DBF5"
             } else {return "white"}
             } 
-            if((val && check && sel===option) || (val && option === correct)){
+            if((colorAns && check && selectedAns===option) || (colorAns && option === correct)){
                 return "green"
-            } else if(sel==option && !check){
+            } else if(selectedAns===option && !check){
                 return "red"
             }else {return "white"}
     })
+
     setOpacity(()=>{
-        if(val && sel===option && !check){
+        if(colorAns && selectedAns===option && !check){
             return "50%"
         } else {return "100%"}
     }) 

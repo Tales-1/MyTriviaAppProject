@@ -9,7 +9,7 @@ export default function Question({question,category,difficulty}){
             <span className='category'><strong>Category</strong>: {category}</span>
             <span className='difficulty'><strong>Difficulty</strong>: {difficulty}</span>
         </div>
-        <h1 className="question">{question}</h1>
+        <h1 className="question" dangerouslySetInnerHTML={{__html:question}}></h1>
         
     </>)
 }

@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import Button from './Button'
 
 import seedrandom from 'seedrandom';
@@ -42,17 +42,17 @@ export default function Answers(props){
                     <div className="answers_container" onClick={(e)=>{props.func(e,props.ind)}}>
                         <Button 
                             option={"True"}
-                            sel={selected.answer}
+                            selectedAns={selected.answer}
                             check={selected.correct}
-                            val={color}
+                            colorAns={color}
                             correct={correct}
                          />
 
                         <Button 
                             option={"False"}
-                            sel={selected.answer}
+                            selectedAns={selected.answer}
                             check={selected.correct}
-                            val={color}
+                            colorAns={color}
                             correct={correct}
                          />
                     </div>
@@ -62,30 +62,30 @@ export default function Answers(props){
                     <div className="answers_container" onClick={(e)=>{props.func(e,props.ind)}}>
                         <Button 
                             option={combineAnswers[0]}
-                            sel={selected.answer}
+                            selectedAns={selected.answer}
                             check={selected.correct}
-                            val={color}
+                            colorAns={color}
                             correct={correct}
                         />
                          <Button 
                             option={combineAnswers[1]}
-                            sel={selected.answer}
+                            selectedAns={selected.answer}
                             check={selected.correct}
-                            val={color}
+                            colorAns={color}
                             correct={correct}
                         />
                          <Button 
                             option={combineAnswers[2]}
-                            sel={selected.answer}
+                            selectedAns={selected.answer}
                             check={selected.correct}
-                            val={color}
+                            colorAns={color}
                             correct={correct}
                         />
                          <Button 
                             option={combineAnswers[3]}
-                            sel={selected.answer}
+                            selectedAns={selected.answer}
                             check={selected.correct}
-                            val={color}
+                            colorAns={color}
                             correct={correct}
                         />
                         
