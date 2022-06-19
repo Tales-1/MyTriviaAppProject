@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MyTriviaAppProject/static/css/main.9ce23ed8.css",
-    "main.js": "/MyTriviaAppProject/static/js/main.459ec550.js",
+    "main.css": "/MyTriviaAppProject/static/css/main.b61534df.css",
+    "main.js": "/MyTriviaAppProject/static/js/main.24352755.js",
     "static/js/787.28cb0dcd.chunk.js": "/MyTriviaAppProject/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/MyTriviaAppProject/index.html",
-    "main.9ce23ed8.css.map": "/MyTriviaAppProject/static/css/main.9ce23ed8.css.map",
-    "main.459ec550.js.map": "/MyTriviaAppProject/static/js/main.459ec550.js.map",
+    "main.b61534df.css.map": "/MyTriviaAppProject/static/css/main.b61534df.css.map",
+    "main.24352755.js.map": "/MyTriviaAppProject/static/js/main.24352755.js.map",
     "787.28cb0dcd.chunk.js.map": "/MyTriviaAppProject/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ce23ed8.css",
-    "static/js/main.459ec550.js"
+    "static/css/main.b61534df.css",
+    "static/js/main.24352755.js"
   ]
 }
