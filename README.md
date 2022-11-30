@@ -1,5 +1,7 @@
 # React Trivia App
 
+![Quizzical](https://user-images.githubusercontent.com/84051594/204838784-6fc96be2-5f92-4d7a-bed7-b1283d43926a.png)
+
 ## Summary - A multiple-choice quiz using the fetch API.
 
 This is a project I built as part of the React Basics course on Scrimba. It was my first project dealing with the fetch API. 
